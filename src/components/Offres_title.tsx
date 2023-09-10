@@ -11,7 +11,9 @@ const Offres_title = () => {
         <div className="main-title text-center">
           <h3>Découvrez nos offres</h3>
         </div>
-        <div className="desc"></div>
+        <div className="desc">
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi architecto in tempore nesciunt iusto temporibu</p>
+        </div>
       </div>
     </div>
   );

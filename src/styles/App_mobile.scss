@@ -1,0 +1,30 @@
+.mobile{
+    margin-top: 7rem;
+       
+       .bg-app{
+        background: url(./../Assets/delivari-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        height: 16rem;
+
+             .delivery-box{
+                padding: 21px 28px 29px;
+
+
+                   .maintitle{
+                    width: 50%;
+                          
+                     h1{
+                        font-size: 34px;
+                        margin-top: 2rem;
+                        font-family: 'Exo 2', sans-serif;
+                        
+                     }
+
+                   
+                   }
+             }
+       }
+}

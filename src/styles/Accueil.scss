@@ -29,7 +29,7 @@
             }
 
             .title {
-                color: aliceblue;
+                color: rgb(255, 255, 255);
                    font-size: calc(2.43rem + 1.5vw);
                 font-family: 'Exo 2', sans-serif;
                 font-weight: bold;
@@ -43,6 +43,7 @@
                     font-size: 44px;
                     padding: 5px 16.5px;
                     height: 35px;
+                    font-style: italic;
                     width: 55px;
                     color: #0c0c0c;
                     background-color: #f8c600;
@@ -84,10 +85,10 @@
 
         .banner2 {
             position: relative;
-            top: -22rem;
+            top: -22.7rem;
             width: 90%;
             filter: brightness(11%);
-            height: 29rem;
+            height: 27rem;
             left: 10%;
         }
 

@@ -7,7 +7,7 @@ import Offres from './pages/Offres';
 
 const App : React.FC= () => {
   return (
-    <div className="w-100">
+    <div>
          <Navbar/> 
          <Accueil/> 
          <Nouveautés/> 

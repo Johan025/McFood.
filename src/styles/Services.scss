@@ -1,0 +1,116 @@
+.services {
+    margin-top: 21rem;
+    width: 100%;
+    height: 30rem;
+    background-color: #eeeeee;
+
+
+    .row {
+        position: relative;
+        top: 4rem;
+    }
+
+    .about-thumb {
+
+        h3 {
+            writing-mode: tb;
+            font-size: 16px;
+            font-weight: 900;
+        }
+    }
+
+    .about-image {
+        margin-left: 50px;
+        position: relative;
+        z-index: 5;
+        top: -9rem;
+
+        img {
+            width: 88%;
+            height: 23rem;
+        }
+    }
+
+    .about-bounce {
+        position: relative;
+        top: -22rem;
+        left: -4rem;
+
+        img {
+            width: 16rem;
+            height: 15rem;
+            animation: bounce 3.5s infinite;
+        }
+
+        @include bounce;
+    }
+
+    .services-title {
+        
+
+        .subtitles {
+            position: relative;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                width: 15px;
+                height: 15px;
+                background: #f8c407;
+                left: 32.8%;
+                top: 2px;
+                border-radius: 100%;
+                z-index: 5;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 4px;
+                width: 50px;
+                background: #f8c407;
+                top: 8px;
+                left: 36.8%;
+                border-radius: 30px;
+                z-index: 5;
+            }
+
+            
+
+            h4 {
+                margin-top: -0.2rem;
+                font-weight: 500;
+            }
+        }
+
+        .maintitles {
+             h2{
+                color: $color3;
+             }
+        }
+
+        .desc {
+
+            p{
+                color:$color4;
+            }
+        }
+
+        .serv{
+
+             button{
+                  padding: 7px;
+                  color: #fff;
+                  font-size: 19.4px;
+                  padding-left: 1rem;
+                  padding-right: 1rem;
+                  font-family: 'Exo 2', sans-serif;
+
+                  &:hover{
+                    background-color: aliceblue;
+                    color: $color1;
+                  }
+             }
+        }
+    }
+}

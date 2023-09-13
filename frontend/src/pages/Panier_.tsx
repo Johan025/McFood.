@@ -10,17 +10,21 @@ interface Props {
 
 const Panier_ : React.FC= () => {
 
-    const {navpanier}= usePanier();
+    const {navpanier, clearPanier}= usePanier();
     
     
   return (
-    <div className={`panier_ ${navpanier ? "open" : "close"}`}>
+    <div className={`panier_ ${navpanier ? "open" : "opengi"}`}>
        <div className="container">
         <div className="row" id="row">
           <div className="col-12">
             <div className="title">
               <h1>Votre panier</h1>
               <div className="lig"></div>
+
+              <div className="delete">
+                  <h1 onClick={clearPanier}>Tout Annuler</h1>
+              </div>
             </div>
           </div>
         </div>

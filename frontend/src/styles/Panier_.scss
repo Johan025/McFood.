@@ -24,11 +24,34 @@
                 background-color: $color2;
                 border-radius: 12px;
             }
+
+            .delete{
+                position: relative;
+                left: 59rem;
+                top: -1rem;
+                width: 12rem;
+                cursor: pointer;
+                padding-left: 3rem;
+                  
+                  h1{
+                    font-size: 19.5px;
+                    padding-left: 3rem;
+                    color: #fff;
+                    padding: 7px;
+                    border-radius: 12px;
+                    background-color: red;
+
+                      &:hover{
+                        background-color: rgb(24, 23, 23);
+                        color:$color2;
+                      }
+                  }
+            }
         }
     }
 
     #row2{
-        margin-top: 3rem;
+        margin-top: 1rem;
 
           .products{
           padding: 8px;
@@ -62,7 +85,7 @@
               }
 
               button{
-                  margin-top: -0.7rem;
+                  margin-top: -4.2rem;
                   padding: 8px;
                   padding-left: 1rem;
                   padding-right: 1rem;
@@ -82,4 +105,13 @@
 .close {
     height: 0;
     transition: 0.5s;
+}
+
+.vide{
+      color: $color2;
+      font-size: 32px;
+      margin-top: 2rem;
+      padding: 12px;
+      background-color: rgba(255, 175, 3, 0.075);
+      border-radius: 12px;
 }

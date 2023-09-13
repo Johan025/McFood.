@@ -1,15 +1,7 @@
 // PanierContext.tsx
 import React, { createContext, useContext, useState , ReactNode } from 'react';
-import Order from '../components/Order';
-
-type PanierContextType = {
-  navpanier:boolean;
-  panier: number;
-  incrementerPanier: () => void;
-  togglePanier: () => void;
-  addCart  : (newcart:Order) => void;
-  cart: Order[];
-};
+import Order from '../components/typescript/Order';
+import PanierContextType from '../components/typescript/PanierContext';
 
 type Props = {
     children: ReactNode;
@@ -30,6 +22,16 @@ export const PanierProvider = ({ children }: Props) => {
   const [panier, setPanier] = useState<number>(0);
   const [navpanier, setNavpanier]=useState<boolean>(false);
   const [cart, Setaddcart]=useState<Order[]>([]);
+  const [livraison, setLivraison]=useState<boolean>(false);
+
+
+  const clearPanier = () => {
+    Setaddcart([]); 
+  };
+
+  const toggleLivraison = () => {
+       setLivraison(!livraison);
+  }
 
   const togglePanier= () => {
       setNavpanier(!navpanier);
@@ -41,12 +43,11 @@ export const PanierProvider = ({ children }: Props) => {
 
   const addCart  = (item:Order) => {
        Setaddcart([...cart,item]);
-       alert(item.name +' , '+item.price);
 
   }
 
   return (
-    <PanierContext.Provider value={{ navpanier,panier, incrementerPanier,togglePanier , addCart ,cart}}>
+    <PanierContext.Provider value={{ navpanier,panier, incrementerPanier,togglePanier , addCart ,cart, clearPanier, livraison, toggleLivraison}}>
       {children}
     </PanierContext.Provider>
   );

@@ -11,15 +11,24 @@ interface Props {
 const Panier_ : React.FC= () => {
 
     const {navpanier}= usePanier();
-    const {addCart, cart} =usePanier();
-
-    const HandleAddCart= () => {
-        addCart();
-    }
-
-  return (
-    <div className={`panier_ ${navpanier ? "open" : "open"}`}>
     
+    
+  return (
+    <div className={`panier_ ${navpanier ? "open" : "close"}`}>
+       <div className="container">
+        <div className="row" id="row">
+          <div className="col-12">
+            <div className="title">
+              <h1>Votre panier</h1>
+              <div className="lig"></div>
+            </div>
+          </div>
+        </div>
+
+         <Panier_components/> 
+
+    
+      </div>
     </div>
   );
 };

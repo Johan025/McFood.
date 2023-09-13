@@ -1,12 +1,6 @@
 // PanierContext.tsx
 import React, { createContext, useContext, useState , ReactNode } from 'react';
-
-interface Order {
-  name: string;
-  price: number;
-  quantity: number;
-  // Vous pouvez ajouter d'autres propriétés liées à la commande au besoin.
-}
+import Order from '../components/Order';
 
 type PanierContextType = {
   navpanier:boolean;
@@ -35,7 +29,7 @@ export const usePanier = () => {
 export const PanierProvider = ({ children }: Props) => {
   const [panier, setPanier] = useState<number>(0);
   const [navpanier, setNavpanier]=useState<boolean>(false);
-  const [cart, Setaddcart]=useState<Order[]>([]);;
+  const [cart, Setaddcart]=useState<Order[]>([]);
 
   const togglePanier= () => {
       setNavpanier(!navpanier);
@@ -45,8 +39,10 @@ export const PanierProvider = ({ children }: Props) => {
     setPanier(panier + 1);
   };
 
-  const addCart  = (newCart:Order) => {
-       Setaddcart([...cart,newCart]);
+  const addCart  = (item:Order) => {
+       Setaddcart([...cart,item]);
+       alert(item.name +' , '+item.price);
+
   }
 
   return (

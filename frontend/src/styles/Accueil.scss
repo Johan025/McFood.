@@ -1,5 +1,5 @@
 .accueil {
-    
+
 
     &_couv {
         width: 100%;
@@ -12,12 +12,19 @@
         top: 35%;
         left: -2rem;
         width: 89%;
-        
+
 
         #col1 {
             position: relative;
             left: 7%;
             top: -1.7rem;
+
+            @include screen(medium) {
+                    
+                 top: 2.7rem;
+            }
+
+
 
             h1 {
                 font-size: 206px;
@@ -26,16 +33,28 @@
                 opacity: 0.02;
                 color: #ffff;
                 margin-right: 15%;
+
+                @include screen(medium) {
+                    font-size: 140px;
+                }
+
+
             }
 
             .title {
                 color: rgb(255, 255, 255);
-                   font-size: calc(2.43rem + 1.5vw);
+                font-size: calc(2.43rem + 1.5vw);
                 font-family: 'Exo 2', sans-serif;
                 font-weight: bold;
                 margin-top: -15rem;
                 margin-left: 3rem;
                 width: 100%;
+
+                @include screen(medium) {
+                    font-size: calc(1.7rem + 1.5vw);
+                }
+
+
 
 
                 span {
@@ -49,82 +68,119 @@
                     background-color: #f8c600;
                     clip-path: polygon(12% 0%, 100% 0%, 86% 100%, 0% 101%);
                     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+                    @include screen(medium) {
+                        font-size: 35px;
+                        padding: 5px 10.5px;
+                        width: 175px;
+                    }
                 }
 
-               
+            }
 
-            
+            p {
+                color: aliceblue;
+                margin-left: 3rem;
+
+
+            }
+
+            button {
+                margin-left: 8%;
+                font-size: 18px;
+                margin-top: 1rem;
+                padding: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+
+                @include screen(medium) {
+                    font-size: 15px;
+                    margin-top: 1rem;
+                    padding: 10px;
+                    margin-left: 13%;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+                &:nth-child(1) {
+                    border: 1.2px solid black;
+                }
+
+
+            }
         }
 
-        p{
-            color: aliceblue;
-            margin-left: 3rem;
-        }
-        
-        button{
-            margin-left: 8%;
-            font-size: 18px;
-            margin-top: 1rem;
-            padding: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
-
-             &:nth-child(1){
-                border: 1.2px solid black;
-             }
-
-               
-        }
-    }
 
 
-
-    #col2 {
-        position: relative;
-        right:-8%;
-
-        .banner2 {
+        #col2 {
             position: relative;
-            top: -22.7rem;
-            width: 90%;
-            filter: brightness(11%);
-            height: 27rem;
-            left: 10%;
-        }
+            right: -8%;
 
-      
-        .image-burger{
-            position: relative;
-            top: 0rem;
-            left: 7%;
-            z-index: 8;
-
-             .burger{
+            .banner2 {
+                position: relative;
+                top: -22.7rem;
                 width: 90%;
-             }
-            
+                filter: brightness(11%);
+                height: 27rem;
+                left: 10%;
+
+                @include screen(medium) {
+                    position: relative;
+                    top: -15.7rem;
+                    width: 85%;
+                    height: 21rem;
+                    left: 29%;
+                }
+            }
+
+
+            .image-burger {
+                position: relative;
+                top: 0rem;
+                left: 7%;
+                z-index: 8;
+
+                .burger {
+                    width: 90%;
+
+                    @include screen(medium) {
+                         position: relative;
+                         width: 105%;
+                         top: 1rem;
+                    }
+                }
+
+            }
+
+            .cling {
+
+                img {
+                    width: 95px;
+                    z-index: 15;
+                    left: 12rem;
+                    top: -1rem;
+                    position: absolute;
+                    height: 95px;
+                    animation: bounce 1s infinite;
+
+                    @include screen(medium) {
+                        width: 75px;
+                        z-index: 15;
+                        left: 9rem;
+                        top: -1.5rem;
+                        position: absolute;
+                        height: 75px;
+                    }
+                }
+
+                @include bounce;
+            }
+
+
         }
 
-        .cling{
 
-             img{
-                width: 95px;
-                z-index: 15;
-                left: 12rem;
-                top: -1rem;
-                position: absolute;
-                height: 95px;
-                animation: bounce 1s infinite;
-             }
-
-             @include bounce;
-        }
-
-       
     }
-
-   
-}
 
 
 }

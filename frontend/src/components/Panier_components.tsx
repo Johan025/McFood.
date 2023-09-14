@@ -6,7 +6,7 @@ import Order from "./typescript/Order";
 import { usePanier } from "./../pages/PanierContexte";
 
 const Panier_components = () => {
-  const { cart } = usePanier();
+  const { cart ,toggleLivraison } = usePanier();
 
   return (
     <div className="row" id="row2">
@@ -19,7 +19,7 @@ const Panier_components = () => {
               <img src={item.image} alt="" />
               <h1>{item.name}</h1>
               <p>{item.price}</p>
-              <button className="btn btn-warning">Livraison</button>
+              <button className="btn btn-warning" onClick={toggleLivraison}>Livraison</button>
             </div>
           ))
         )}

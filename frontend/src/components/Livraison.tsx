@@ -4,13 +4,15 @@ import { faTruck } from "@fortawesome/free-solid-svg-icons";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { faSortUp } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
+import { usePanier } from "./../pages/PanierContexte";
 
 const Livraison: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [adresse, setAdresse] = useState<string>("");
   const [produit, setProduit] = useState<string>("");
   const date = new Date();
-  const [number, setNumber] = useState<number>(0);
+  const [number, setNumber] = useState<number>(1);
+  const { livraison } = usePanier();
 
   const handleChange = async (e: any) => {
     setName(e.target.value);
@@ -36,14 +38,20 @@ const Livraison: React.FC = () => {
         adresse,
         produit,
         date,
+        number
       });
 
-      alert("les donnés ont été recus");
+      console.log("les donnés ont été recus");
 
     } catch (err) {
       console.log(err);
     }
   };
+  
+  if (number<1){
+    setNumber(1);
+  }
+  
 
   function incrementer() {
     setNumber(number + 1);
@@ -51,11 +59,13 @@ const Livraison: React.FC = () => {
 
   function decrementer() {
     setNumber(number - 1);
+
+    
   }
 
   return (
-    <div className="Livraison text-center">
-      <div className="container">
+    <div className={`Livraison ${livraison ? "Ouvrir_livraison" : "Fermer_livraison"}`}>
+      <div className="container text-center">
         <div className="row" id="row1">
           <div className="col-12">
             <h1>

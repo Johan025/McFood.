@@ -22,6 +22,10 @@
                 top: 7px;
                 border-radius: 100%;
                 z-index: -1;
+
+                @include screen(medium) {
+                     right: 34%;
+                }
             }
 
             &::after {
@@ -34,6 +38,11 @@
                 left: 63.8%;
                 border-radius: 30px;
                 z-index: -1;
+
+                  
+                @include screen(medium) {
+                    left: 67.5%;
+               }
             }
         }
 
@@ -50,6 +59,10 @@
                 top: 10px;
                 border-radius: 100%;
                 z-index: -1;
+
+                @include screen(medium) {
+                    left: 34.5%;
+               }
             }
 
             &::after {
@@ -62,6 +75,10 @@
                 left: 32%;
                 border-radius: 30px;
                 z-index: -1;
+
+                @include screen(medium) {
+                    left: 25.9%;
+               }
             }
 
             h3 {
@@ -158,6 +175,8 @@
             background-size: cover;
             padding: 60px 89px 34px 41px;
 
+           
+
               h3{
                   color: aliceblue;
                   font-size: 34px;
@@ -184,15 +203,29 @@
             background-size: cover;
             padding: 60px 89px 34px 41px;
 
+            @include screen(medium) {
+                position: relative;
+                left:-15.7%;
+            }
+
               h3{
                   color: aliceblue;
                   font-size: 34px;
                   width: 100%;
                   font-family: 'Exo 2', sans-serif;
+
+                  @include screen(medium) {
+                    font-size: 27px;
+                  }
               }
 
               p{
                 color: rgb(169, 171, 173);
+  
+                @include screen(medium) {
+                    font-size: 18px;
+                  }
+                  
               }
 
               .price{

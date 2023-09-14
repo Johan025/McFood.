@@ -13,7 +13,7 @@ const Accueil: React.FC = () => {
         <div className="row g-0" id="row">
           <Welcome_Desc />
 
-          <div className="col-lg-6" id="col2">
+          <div className="col-6 col-lg-6" id="col2">
             <div className="cling">
               <img src={sharp} alt="" />
             </div>

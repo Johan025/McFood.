@@ -14,7 +14,7 @@ const Panier_ : React.FC= () => {
     
     
   return (
-    <div className={`panier_ ${navpanier ? "open" : "opengi"}`}>
+    <div className={`panier_ ${navpanier ? "open" : "close"}`}>
        <div className="container">
         <div className="row" id="row">
           <div className="col-12">

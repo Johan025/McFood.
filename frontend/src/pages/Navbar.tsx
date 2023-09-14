@@ -3,10 +3,12 @@ import logo from "./../Assets/hamburger.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Nav_menu from "../components/Nav_menu";
 import Nav_gadget from "../components/Nav_gadget";
-import { usePanier } from './PanierContexte';
+
+import { usePanier } from "./PanierContexte";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -18,7 +20,7 @@ function Navbar() {
   const { panier } = usePanier();
 
   return (
-    <nav className={`navbar ${isOpen ? "open" : ""}`}>
+    <nav className="navbar">
       <div className="navbar_logo -mt-4">
         <h1>
           {" "}
@@ -27,12 +29,18 @@ function Navbar() {
       </div>
 
       <button className="navbar_toggle" onClick={toggleMenu}>
-        {isOpen ? "Fermer" : "Menu"}
+          <FontAwesomeIcon icon={faBars} className="icone_hamburger" />
       </button>
 
-      <Nav_menu />
+      <div className={`navbar_menu ${isOpen ? "open_nav" : "close_nav"}`} id="nav_menu">
+        <ul className="toogle_nav text-center">
+          <li className="active">ACCUEIL</li>
+          <li>MENU</li>
+          <li>LIVRAISONS</li>
+          <li>COMMANDES</li>
+        </ul>
+      </div>
       <Nav_gadget panier={panier} />
-     
     </nav>
   );
 }

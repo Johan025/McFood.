@@ -1,13 +1,14 @@
-import React from "react";
+import React ,{useState} from "react";
 
 const Nav_menu: React.FC = () => {
+
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <ul className="navbar_menu">
-      <li className="active">ACCUEIL</li>
-      <li>MENU</li>
-      <li>LIVRAISONS</li>
-      <li>COMMANDES</li>
-    </ul>
+    <div></div>
   );
 };
 

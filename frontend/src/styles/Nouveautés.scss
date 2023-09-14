@@ -20,6 +20,10 @@
                 top: 2px;
                 border-radius: 100%;
                 z-index: -1;
+
+                @include screen(medium) {
+                    right: 36%;
+                }
             }
 
             &::after {
@@ -32,6 +36,10 @@
                 left: 60.7%;
                 border-radius: 30px;
                 z-index: -1;
+
+                @include screen(medium) {
+                    left: 65.5%;
+                }
             }
         }
 
@@ -48,6 +56,10 @@
                 top: 2px;
                 border-radius: 100%;
                 z-index: -1;
+
+                @include screen(medium) {
+                     left: 36%;
+                }
             }
 
             &::after {
@@ -60,6 +72,10 @@
                 left: 34%;
                 border-radius: 30px;
                 z-index: -1;
+
+                @include screen(medium) {
+                    left: 27%;
+               }
             }
 
             h3 {
@@ -106,6 +122,7 @@
                  img{
                     width: 90%;
                     height: 14rem;
+                    margin-left: 1.2rem;
                  }
             }
 

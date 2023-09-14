@@ -16,6 +16,9 @@ const livraisonSchema= new mongoose.Schema({
           },
           date:{
             type:Date,
+          },
+          nombre:{
+            type: Number,
           }
 
 })

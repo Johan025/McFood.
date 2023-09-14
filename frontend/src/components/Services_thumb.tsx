@@ -4,7 +4,7 @@ import about_shape from "./../Assets/about-shape.png"
 
 const Services_thumb: React.FC = () => {
     return (
-        <div className="col-6">
+        <div className="col-12 col-lg-6">
             <div className="about-thumb">
                  <h3>LIRE LE CONTENU</h3>
             </div>

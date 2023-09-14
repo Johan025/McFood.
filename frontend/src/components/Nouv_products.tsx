@@ -33,8 +33,8 @@ const Nouv_products: React.FC = () => {
 
 
   return (
-    <div className="row" id="row2">
-      <div className="col-4">
+    <div className="row gy-5 gx-5 g-lg-5" id="row2">
+      <div className="col-6 col-lg-4">
       <div className="Nouveautés_card">
           <div className="image">
             <img src={pizza_features} alt="" />
@@ -47,7 +47,7 @@ const Nouv_products: React.FC = () => {
         </div>
       </div>
 
-      <div className="col-4">
+      <div className="col-6 col-lg-4">
       <div className="Nouveautés_card">
           <div className="image">
             <img src={juice_features} alt="" />
@@ -60,7 +60,7 @@ const Nouv_products: React.FC = () => {
         </div>
       </div>
 
-      <div className="col-4">
+      <div className="col-6 col-lg-4">
       <div className="Nouveautés_card">
           <div className="image">
             <img src={burger_features} alt="" />

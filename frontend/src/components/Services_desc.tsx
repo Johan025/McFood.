@@ -2,7 +2,7 @@ import React from 'react';
 
 const Services_desc = () => {
     return (
-        <div className="col-6">
+        <div className="col-12 col-lg-6">
             <div className="services-title">
                      <div className="subtitles">
                            <h4>Notre Service</h4>

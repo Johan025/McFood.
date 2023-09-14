@@ -5,6 +5,11 @@
     background-color: #eeeeee;
     width: 100%;
     overflow: hidden;
+
+    @include screen(medium) {
+          margin-top: 9.5rem;
+          height: 65rem;
+    }
     
 
 
@@ -49,7 +54,11 @@
     }
 
     .services-title {
-        
+
+        @include screen(medium) {
+             position: relative;
+             top: -14rem;
+      }
 
         .subtitles {
             position: relative;
@@ -64,6 +73,10 @@
                 top: 7px;
                 border-radius: 100%;
                 z-index: 5;
+
+                @include screen(medium) {
+                    left: 23.8%;
+                }
             }
 
             &::after {
@@ -76,6 +89,10 @@
                 left: 40.8%;
                 border-radius: 30px;
                 z-index: 5;
+
+                @include screen(medium) {
+                    left: 27.4%;
+                }
             }
 
             

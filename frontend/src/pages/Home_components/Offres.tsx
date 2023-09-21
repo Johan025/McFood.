@@ -1,6 +1,6 @@
 import React from "react";
-import Offres_title from "../components/Offres_title";
-import Offres_contents from "../components/Offres_contents";
+import Offres_title from "../../components/Offres_title";
+import Offres_contents from "../../components/Offres_contents";
 
 const Offres: React.FC = () => {
   return (

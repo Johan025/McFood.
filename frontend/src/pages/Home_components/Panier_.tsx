@@ -1,6 +1,6 @@
 import React, { memo } from "react";
-import { usePanier } from './../pages/PanierContexte';
-import Panier_components from "../components/Panier_components";
+import { usePanier } from './PanierContexte';
+import Panier_components from "./../../components/Panier_components";
 
 
 interface Props {

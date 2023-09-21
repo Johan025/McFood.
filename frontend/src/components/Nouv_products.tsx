@@ -2,8 +2,8 @@ import React from "react";
 import pizza_features from "./../Assets/pizza.jpg";
 import burger_features from "./../Assets/burger.jpg";
 import juice_features from "./../Assets/juice.jpg";
-import { usePanier } from './../pages/PanierContexte';
-import Nouveautés from "../pages/Nouveautés";
+import { usePanier } from './../pages/Home_components/PanierContexte';
+import Nouveautés from "../pages/Home_components/Nouveautés";
 import Order from "./typescript/Order";
 
 const Nouv_products: React.FC = () => {

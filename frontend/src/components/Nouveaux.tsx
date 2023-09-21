@@ -1,6 +1,6 @@
 import React from 'react';
 import Order from './typescript/Order';
-import { usePanier } from './../pages/PanierContexte';
+import { usePanier } from './../pages/Home_components/PanierContexte';
 
 interface Props{
     items: {

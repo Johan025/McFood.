@@ -1,6 +1,6 @@
 import React from "react";
-import Services_thumb from "../components/Services_thumb";
-import Services_desc from "../components/Services_desc";
+import Services_thumb from "../../components/Services_thumb";
+import Services_desc from "../../components/Services_desc";
 
 const Services : React.FC = () => {
   return (

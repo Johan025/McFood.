@@ -1,5 +1,5 @@
 import React from "react";
-import App_desc from "../components/App_desc";
+import App_desc from "../../components/App_desc";
 
 const App_mobile: React.FC = () => {
   return (

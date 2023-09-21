@@ -1,7 +1,7 @@
 // PanierContext.tsx
 import React, { createContext, useContext, useState , ReactNode } from 'react';
-import Order from '../components/typescript/Order';
-import PanierContextType from '../components/typescript/PanierContext';
+import Order from '../../components/typescript/Order';
+import PanierContextType from '../../components/typescript/PanierContext';
 
 type Props = {
     children: ReactNode;
@@ -27,6 +27,7 @@ export const PanierProvider = ({ children }: Props) => {
 
   const clearPanier = () => {
     Setaddcart([]); 
+    setPanier(0);
   };
 
   const toggleLivraison = () => {

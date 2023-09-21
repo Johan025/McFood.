@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { usePanier } from './../pages/PanierContexte';
+import { usePanier } from './../pages/Home_components/PanierContexte';
 
 interface NavGadgetProps {
   panier: number;

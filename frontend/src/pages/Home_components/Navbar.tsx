@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import logo from "./../Assets/hamburger.jpeg";
+import logo from "./../../Assets/hamburger.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Nav_menu from "../components/Nav_menu";
-import Nav_gadget from "../components/Nav_gadget";
+import Nav_menu from "../../components/Nav_menu";
+import Nav_gadget from "../../components/Nav_gadget";
 
 import { usePanier } from "./PanierContexte";
 

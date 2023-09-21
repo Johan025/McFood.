@@ -4,7 +4,7 @@ import { faTruck } from "@fortawesome/free-solid-svg-icons";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { faSortUp } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
-import { usePanier } from "./../pages/PanierContexte";
+import { usePanier } from "./../pages/Home_components/PanierContexte";
 
 const Livraison: React.FC = () => {
   const [name, setName] = useState<string>("");

@@ -1,9 +1,9 @@
 import React from "react";
-import bg from "./../Assets/slider-bg.png";
-import banner2 from "./../Assets/banner-shaope-2.png";
-import burger from "./../Assets/burger.png";
-import sharp from "./../Assets/banner-shape-1.png";
-import Welcome_Desc from "../components/Welcome_Desc";
+import bg from "./../../Assets/slider-bg.png";
+import banner2 from "./../../Assets/banner-shaope-2.png";
+import burger from "./../../Assets/burger.png";
+import sharp from "./../../Assets/banner-shape-1.png";
+import Welcome_Desc from "../../components/Welcome_Desc";
 
 const Accueil: React.FC = () => {
   return (

@@ -7,15 +7,19 @@
         overflow: hidden;
 
         @include screen(medium) {
-            height: 46rem;
+            height: 45rem;
        }
     }
 
     #row {
         position: absolute;
-        top: 25%;
+        top: 48%;
         left: -2rem;
         width: 89%;
+
+        @include screen(medium) {
+            top: 32%;
+       }
 
 
         #col1 {
@@ -122,7 +126,7 @@
 
             .banner2 {
                 position: relative;
-                top: -22.7rem;
+                top: -25.7rem;
                 width: 90%;
                 filter: brightness(11%);
                 height: 27rem;
@@ -130,17 +134,17 @@
 
                 @include screen(medium) {
                     position: relative;
-                    top: -15.7rem;
-                    width: 85%;
+                    top: -18.7rem;
+                    width: 88%;
                     height: 21rem;
-                    left: 29%;
+                    left: 24%;
                 }
             }
 
 
             .image-burger {
                 position: relative;
-                top: 0rem;
+                top: -4rem;
                 left: 7%;
                 z-index: 8;
 

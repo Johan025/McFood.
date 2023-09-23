@@ -2,7 +2,7 @@ import React from 'react';
 
 const Welcome_Desc: React.FC = () => {
     return (
-        <div className="col-6" id="col1">
+        <div className="col-12 col-md-6" id="col1">
         <h1>FOOD</h1>
         <h2 className="title">
           <span>Food</span> LE MEILLEUR FAST FOOD

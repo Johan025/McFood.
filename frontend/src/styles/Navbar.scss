@@ -52,16 +52,24 @@
 
             .icone_hamburger{
                    font-size: 26px;
-                   color: $color2
+                   color: $color2;
             }
 
         @include screen(medium) {
+            display: block;
+        }
+
+        @include screen(small) {
             display: block;
         }
     }
 
     #nav_menu{
         @include screen(medium){
+            overflow: hidden;
+        }
+
+        @include screen(small){
             overflow: hidden;
         }
 
@@ -77,6 +85,14 @@
              overflow: hidden;
          }
 
+         @include screen(small){
+            width: 100%;
+            position: fixed;
+            background-color: rgb(19, 18, 18);
+            top: 6.2rem;
+            overflow: hidden;
+        }
+
         .toogle_nav{
             list-style: none;
             display: flex;
@@ -86,6 +102,13 @@
             top: 2.4rem;
 
             @include screen(medium) {
+                display: none;
+                position: fixed;
+                 top :7.5rem;
+                 right: 40%;
+            }
+
+            @include screen(small) {
                 display: none;
                 position: fixed;
                  top :7.5rem;
@@ -106,6 +129,12 @@
                      font-size: 18px;
                      margin-top: 0.7rem;
                 }
+
+                @include screen(small) {
+                    font-size: 18px;
+                    margin-top: 0.7rem;
+               }
+                
             }
 
             .active {
@@ -122,6 +151,12 @@
         top: 2.5rem;
 
         @include screen(medium) {
+            position: fixed;
+            right: 8%;
+            top: 2.5rem;
+        }
+
+        @include screen(small) {
             position: fixed;
             right: 8%;
             top: 2.5rem;
@@ -152,6 +187,11 @@
         }
 
         @include screen(medium) {
+            position: fixed;
+            right: 13%;
+        }
+
+        @include screen(small) {
             position: fixed;
             right: 13%;
         }

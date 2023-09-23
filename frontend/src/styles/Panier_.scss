@@ -27,11 +27,15 @@
 
             .delete{
                 position: relative;
-                left: 57.7rem;
+                left: 80%;
                 top: -1rem;
                 width: 12rem;
                 cursor: pointer;
                 padding-left: 3rem;
+
+                 @include screen(medium){
+                    left: 72.5%;
+                 }
                   
                   h1{
                     font-size: 19.5px;

@@ -1,5 +1,5 @@
 .mobile{
-    margin-top: 7rem;
+    margin-top: 4rem;
        
        .bg-app{
         background: url(./../Assets/delivari-bg.jpg);
@@ -8,6 +8,7 @@
         background-repeat: no-repeat;
         border-radius: 8px;
         height: 16rem;
+        object-fit: cover;
 
              .delivery-box{
                 padding: 21px 28px 29px;
@@ -20,11 +21,31 @@
                         font-size: 34px;
                         margin-top: 2rem;
                         font-family: 'Exo 2', sans-serif;
+
+                        @include screen(small){
+                           font-size: 28px;
+                        }
                         
                      }
 
                    
+
+                   
                    }
+
+                   .icone{
+
+                     .icon{
+                         
+                     
+                            
+                          @include screen(small){
+                             width: 80%;
+                          }
+                        
+                          
+                     }
+                 }
              }
        }
 }

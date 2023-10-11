@@ -5,8 +5,8 @@ import HomePage from "./pages/HomePage";;
 const App: React.FC = () => {
   return (
     <PanierProvider>
-      <div>
-      <HomePage/>
+      <div className="app">
+        <HomePage />
       </div>
     </PanierProvider>
   );

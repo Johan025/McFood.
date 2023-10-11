@@ -1,7 +1,5 @@
 import Order from "./Order";
 
-
-
 type PanierContextType = {
     navpanier:boolean;
     panier: number;

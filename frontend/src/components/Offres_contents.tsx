@@ -3,7 +3,7 @@ import React from "react";
 const Offres_contents: React.FC = () => {
   return (
     <div className="row  text-start mt-4 g-0" id="row2">
-      <div className="col-6 col-lg-4">
+      <div className="col-12 col-md-6 col-lg-4">
         <div className="box-content">
           <h3>Jus d' orange</h3>
           <p className="mt-3">Lorem ipsum dolor sit amet consectetur </p>
@@ -13,7 +13,7 @@ const Offres_contents: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="col-6 col-lg-4">
+      <div className="col-12 col-md-6  col-lg-4">
         <div className="box-content2">
           <h3>Le big burger </h3>
           <p className="mt-3">Lorem ipsum dolor sit amet consectetur</p>
@@ -24,7 +24,7 @@ const Offres_contents: React.FC = () => {
         </div>
       </div>
 
-      <div className="col-6 col-lg-4">
+      <div className="col-12 col-md-6 col-lg-4">
       <div className="box-content3">
           <h3> Pizza poulet</h3>
           <p className="mt-3">Lorem ipsum dolor sit amet consectetur </p>

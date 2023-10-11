@@ -10,16 +10,16 @@ import Livraison from "./../components/Livraison";
 
 const HomePage = () => {
     return (
-        <div>
+      <div className="homepage">
         <Navbar />
         <Accueil />
         <Nouveautés />
         <Services />
         <Offres />
         <App_mobile />
-        <Panier_/>
-        <Livraison/>
-        </div>
+        <Panier_ />
+        <Livraison />
+      </div>
     );
 };
 

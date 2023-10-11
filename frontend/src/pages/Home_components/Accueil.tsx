@@ -10,10 +10,10 @@ const Accueil: React.FC = () => {
     <div className="accueil">
       <img src={bg} alt="" className="accueil_couv" />
       <div className="container">
-        <div className="row g-0" id="row">
+        <div className="row gx-4" id="row">
           <Welcome_Desc />
 
-          <div className="col-6 col-lg-6" id="col2">
+          <div className="col-12 col-md-6" id="col2">
             <div className="cling">
               <img src={sharp} alt="" />
             </div>
@@ -22,7 +22,7 @@ const Accueil: React.FC = () => {
               
               <img src={burger} alt="" className="burger" />
             </div>
-            <img src={banner2} alt="" className="banner2" />
+           
            
           </div>
         </div>

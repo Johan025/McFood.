@@ -1,6 +1,17 @@
 .Nouveautés {
-    margin-top: 6rem;
+    margin-top: 2rem;
     width: 100%;
+
+
+    @include screen(medium) {
+        margin-top: -8rem;
+   }
+
+   @include screen(small) {
+    margin-top: -1rem;
+}
+
+   
     
 
     #col1 {
@@ -24,6 +35,10 @@
                 @include screen(medium) {
                     right: 36%;
                 }
+
+                @include screen(small) {
+                    right: 25%;
+                }
             }
 
             &::after {
@@ -39,6 +54,10 @@
 
                 @include screen(medium) {
                     left: 65.5%;
+                }
+
+                @include screen(small) {
+                   left: 78%;
                 }
             }
         }
@@ -60,6 +79,10 @@
                 @include screen(medium) {
                      left: 36%;
                 }
+
+                @include screen(small) {
+                   left: 26%;
+                }
             }
 
             &::after {
@@ -76,6 +99,10 @@
                 @include screen(medium) {
                     left: 27%;
                }
+
+               @include screen(small) {
+                left: 8%;
+             }
             }
 
             h3 {
@@ -93,50 +120,78 @@
             margin-top: 1rem;
 
             h3 {
-                font-size: 32px;
+                font-size: 39px;
                 color: $color3;
+                font-weight: bold;
+
+                  
+               @include screen(small) {
+                font-size: 28px;
+             }
             }
 
             p {
                 width: 60%;
                 margin-left: 20%;
                 color: $color4;
+
+                @include screen(small) {
+                    width: 90%;
+                    margin-left: 4%;
+                 }
             }
         }
     }
 
     #row2 {
         position: relative;
-        top: 4rem;
+        top: 1.8rem;
 
         .Nouveautés_card {
             width: 100%;
-            height: 30rem;
-            padding: 20px;
+            overflow: hidden;
             border: 0px solid;
-            border-radius: 18px;
+            cursor: pointer;
+            border-radius: 14px;
+            height: 19.3rem;
             box-shadow: 0 0 8px rgba(46, 44, 44, 0.315);
 
             .image {
                  
                  img{
-                    width: 90%;
-                    height: 14rem;
-                    margin-left: 1.2rem;
+                    width: 100%;
+                    object-fit: cover;
+                    height: 19.3rem;
                  }
             }
 
             .box-contents {
-                margin-top: 2rem;
+                position: relative;
+                border-top-right-radius: 11px;
+                border-top-left-radius: 11px;
+                
+                padding-bottom: 1.8rem;
+                background-color: #252525c0;
 
                     h1{
                        font-size: 29px;
+                       font-weight: bold;
+                       color: #f5f5f5;
+                    }
+
+                    .lig{
+                        width: 22%;
+                        margin-left: 40%;
+                        height: 5px;
+                        border-radius: 12px;
+                        background-color: #f8c407;
                     }
 
                     p{
                         color: #3a3737;  
                         font-size: 23px;
                         color: $color2;
+                        margin-top: 1rem;
                         font-weight: bold;
                     }
 
@@ -147,12 +202,25 @@
                         padding: 7px;
                         padding-left: 1rem;
                         padding-right: 1rem;
+                        border-radius: 10px;
 
                           &:hover{
                             background-color: aliceblue;
                             color: $color1;
                           }
                     }
+            }
+
+            .open_{
+               position: relative;
+               top: -11rem;
+               transition: 0.2s ease-in;
+            }
+
+            .close_{
+                position: relative;
+                top: 0rem;
+                transition: 0.2s ease-out;
             }
 
           

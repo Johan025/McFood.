@@ -1,39 +1,55 @@
 .accueil {
     overflow: hidden;
+    width: 100%;
+    height: 52rem;
+    overflow: hidden;
+    padding-bottom: 3rem;
+
+    @include screen(small) {
+        height: 55.5rem;
+       }
 
 
     &_couv {
         width: 100%;
-        height: 119vh;
+        height: 52rem;
         overflow: hidden;
+        object-fit: cover;
 
         @include screen(medium) {
-            height: 85vh;
+            height: 38.5rem;
+       }
+
+       @include screen(small) {
+        height: 52.5rem;
+        object-fit: cover;
        }
     }
 
     #row {
-        position: absolute;
-        top: 48%;
-        left: -2rem;
-        width: 89%;
+        position: relative;
+        top: -29rem;
+        left: 0rem;
+        max-width: 100%;
 
         @include screen(medium) {
-            top: 32%;
+            top: -24rem;
+            max-width: 100%;
+            left: -10%;
        }
 
 
        @include screen(small) {
-        top: 32%;
-        left: 2rem;
-        width: 89%;
+        top: -32.5rem;
+        max-width: 98%;
+        left: 0.6%;
    }
 
 
         #col1 {
             position: relative;
-            left: 7%;
-            top: -5.7rem;
+            left: 0%;
+            top: -5rem;
 
             @include screen(medium) {
                     
@@ -41,10 +57,14 @@
                  left: 4%;
             }
 
+            @include screen(small) {
+                 left: -7%;
+            }
+
 
 
             h1 {
-                font-size: 206px;
+                font-size: 198px;
                 font-weight: 900;
                 font-style: italic;
                 opacity: 0.02;
@@ -52,7 +72,12 @@
                 margin-right: 15%;
 
                 @include screen(medium) {
-                    font-size: 140px;
+                    font-size: 120px;
+                }
+
+
+                @include screen(small) {
+                    font-size: 130px;
                 }
 
 
@@ -60,7 +85,7 @@
 
             .title {
                 color: rgb(255, 255, 255);
-                font-size: calc(2.43rem + 1.5vw);
+                font-size: calc(2.03rem + 1.5vw);
                 font-family: 'Exo 2', sans-serif;
                 font-weight: bold;
                 margin-top: -15rem;
@@ -68,7 +93,12 @@
                 width: 100%;
 
                 @include screen(medium) {
-                    font-size: calc(1.7rem + 1.5vw);
+                    font-size: calc(1.4rem + 1.4vw);
+                }
+
+                @include screen(small) {
+                    font-size: calc(1.6rem + 1.3vw);
+                    width: 100%;
                 }
 
 
@@ -87,9 +117,13 @@
                     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
                     @include screen(medium) {
-                        font-size: 35px;
+                        font-size: 34px;
                         padding: 5px 10.5px;
-                        width: 175px;
+                        width: 181px;
+                    }
+
+                    @include screen(small) {
+                        font-size: 29px;
                     }
                 }
 
@@ -98,9 +132,17 @@
             p {
                 color: aliceblue;
                 margin-left: 3rem;
+                width: 100%;
 
 
             }
+
+            .button{
+
+                @include screen(small){
+                 position: relative;
+                 left: 4%;
+                }
 
             button {
                 margin-left: 8%;
@@ -109,6 +151,18 @@
                 padding: 10px;
                 padding-left: 15px;
                 padding-right: 15px;
+
+                // #b1{
+                //       background-color: #f8c600;
+                //       border: 2px solid #f8c600;
+                //       margin-left: 8%;
+                //       font-size: 18px;
+                //       margin-top: 1rem;
+                //       padding: 10px;
+                //       padding-left: 15px;
+                //       padding-right: 15px;
+
+                // }
 
                 @include screen(medium) {
                     font-size: 15px;
@@ -119,19 +173,36 @@
                     padding-right: 15px;
                 }
 
-                &:nth-child(1) {
-                    border: 1.2px solid black;
+                @include screen(small) {
+                    font-size: 14px;
+                    margin-top: 1rem;
+                    padding: 8px;
+                    margin-left: 15%;
+                    margin-left: 12%;
+                    padding-left: 15px;
+                    padding-right: 15px;
                 }
+
+               
 
 
             }
+        }
         }
 
 
 
         #col2 {
             position: relative;
-            right: -8%;
+            right: 0;
+
+            @include screen(medium) {
+                right: -8%;
+            }
+
+            @include screen(small) {
+                top: 2.6rem;
+            }
 
             .banner2 {
                 position: relative;
@@ -157,7 +228,7 @@
                 position: relative;
                 top: -4rem;
                 left: 7%;
-                z-index: 8;
+                z-index: 5;
 
                 .burger {
                     width: 90%;
@@ -191,6 +262,16 @@
                         position: absolute;
                         height: 75px;
                     }
+
+                    @include screen(small) {
+                        width: 75px;
+                        z-index: 15;
+                        left: 8rem;
+                        top: -5.5rem;
+                        position: absolute;
+                        height: 75px;
+                    }
+
                 }
 
                 @include bounce;
